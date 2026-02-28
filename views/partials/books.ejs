@@ -1,0 +1,18 @@
+
+<div className="container">
+  <% bookInfo.forEach(book => { %>
+
+    <a href="/favourites/<%= book.name %>" class="book_card_link">
+      
+      <div class="book_card">
+        <div class="book_rid">
+          <div class="name info_big center"><%= book.name %></div>
+          <div class="author info_big center"><%= book.author %></div>
+          <div class="genre info_big center"><%= book.genre %></div>
+          <div class="description info_normal"><%= book.description %></div>
+          <div class="pages info_normal txt_right"><%= book.pages %></div>
+        </div>
+      </div>
+
+    </a> <% }) %>
+</div>

@@ -1,0 +1,35 @@
+<%- include("../partials/head.ejs") %> <%- include("../partials/menu.ejs") %>
+
+<div class="container page_container">
+  <div class="book_page_layout">
+    <div class="book_cover_container">
+      <img
+        src="/images/<%= book.image %>"
+        alt="<%= book.name %>"
+        height="100%"
+        loading="lazy"
+        class="book_cover"
+      />
+    </div>
+
+    <div class="info_container">
+      <h1 class="name title info_big"><%= book.name %></h1>
+      <h2 class="author info_normal"><%= book.author %></h2>
+      <div class="genre_tag"><%= book.genre %></div>
+
+      <p class="book_description info_normal"><%= book.description %></p>
+
+      <div class="meta_info">
+        <span class="pages info_normal"
+          ><strong>Length: </strong> <%= book.pages %> pages</span
+        >
+      </div>
+
+      <a href="javascript:history.back()" class="back_button"
+        >Back to Library</a
+      >
+    </div>
+  </div>
+</div>
+
+<%- include("../partials/footer.ejs") %>

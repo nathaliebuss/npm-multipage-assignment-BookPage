@@ -1,0 +1,13 @@
+<% bookInfo.forEach(book => { %>
+    <a href="/<%= pageType %>/<%= book.name %>" class="book_card_link"></a>
+  <a href="/<%= book.group === 'favourites' ? 'favourites' : 'to-be-read' %>/<%= book.name %>" class="book_card_link">
+    <div class="book_card">
+      <div class="card_content">
+        <div class="name info_big center"><%= book.name %></div>
+        <div class="author info_big center"><%= book.author %></div>
+        <div class="genre info_big center"><%= book.genre %></div>
+        <div class="description info_normal"><%= book.description.substring(0, 200) %>...</div>
+      </div>
+    </div>
+  </a>
+<% }) %>

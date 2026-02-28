@@ -1,0 +1,12 @@
+<%- include("../partials/head.ejs")%>
+<%- include("../partials/menu.ejs")%>
+
+<body>
+  <div class="container">
+  <% if (locals.bookInfo) { %>
+    <% if (pageType==="books" ) { %>
+      <%- include('../partials/books') %>
+        <% }} %>
+        </div>
+        <%- include('../partials/footer')  %>
+</body>

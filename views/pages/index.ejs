@@ -1,0 +1,17 @@
+<%- include("../partials/head.ejs")%>
+<%- include("../partials/menu.ejs")%>
+
+<div class="container">
+  <% if (pageType === 'home') { %>
+
+    <%- include("../partials/home.ejs") %>
+
+  <% } else if (pageType === 'favourites' || pageType === 'to-be-read') { %>
+
+    <%- include("../partials/book-card.ejs") %> 
+    
+  <% } else if (pageType === 'book-detail') { %>
+    <%- include("../partials/book-detail.ejs") %>
+  <% } %>
+</div>
+    <%- include('../partials/footer')%>
