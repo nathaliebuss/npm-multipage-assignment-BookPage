@@ -252,7 +252,7 @@ body {
 .back_button {
   background-color: #b563c7;
   border-radius: 8px;
-  color: #e1cde6;
+  color: #ffffff;
   font-weight: bold;
   margin-top: 4px;
   padding: 6px;
@@ -262,7 +262,7 @@ body {
 }
 
 .back_button:hover {
-  color: #ffffff;
+  background-color: #330f3b;
 }
 
 .footer {
