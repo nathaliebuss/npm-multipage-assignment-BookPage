@@ -16,7 +16,7 @@ toBeReadRouter.get("/", (req, res) => {
   }
   res.render(path.join(__dirname, "views/pages/index"), {
     pageType: "to-be-read",
-    bookInfo: toBeRead,
+    bookInfo: selectedToBeRead,
   });
 });
 
