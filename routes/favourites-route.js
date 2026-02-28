@@ -15,7 +15,7 @@ favouritesRouter.get("/", (req, res) => {
   }
   res.render(path.join(__dirname, "views/pages/index"), {
     pageType: "favourites",
-    bookInfo: favourites,
+    bookInfo: selectedFavourites,
   });
 });
 
