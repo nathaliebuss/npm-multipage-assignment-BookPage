@@ -31,7 +31,7 @@ favouritesRouter.get("/:name", (req, res) => {
       pageType: "book-detail",
     });
   } else {
-    res.status(404).send("thats one of my favourites!!!:(");
+    res.status(404).send("thats not one of my favourites :(");
   }
 });
 
