@@ -21,7 +21,9 @@ favouritesRouter.get("/", (req, res) => {
 
 favouritesRouter.get("/:name", (req, res) => {
   const bookName = req.params.name;
-  const book = favourites.find((b) => b.name === bookName);
+  const book = favourites.find(
+    (b) => b.name.toLowerCase() === bookName.toLowerCase(),
+  );
 
   if (book) {
     res.render("pages/book-detail", {
