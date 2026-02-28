@@ -10,7 +10,7 @@ favouritesRouter.get("/", (req, res) => {
   let selectedFavourites = favourites;
   if (req.query.name) {
     selectedFavourites = favourites.filter(
-      book.name.toLowerCase() === req.query.name.toLowerCase(),
+      (book) => book.name.toLowerCase() === req.query.name.toLowerCase(),
     );
   }
   res.render(path.join(__dirname, "views/pages/index"), {
