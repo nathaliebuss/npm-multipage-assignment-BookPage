@@ -16,14 +16,16 @@ toBeReadRouter.get("/", (req, res) => {
   }
   res.render(path.join(__dirname, "views/pages/index"), {
     pageType: "to-be-read",
-    bookInfo: selectedToBeRead,
+    bookInfo: toBeRead,
   });
 });
 
 // so it its /to-be-read/... in search engine
 toBeReadRouter.get("/:name", (req, res) => {
   const bookName = req.params.name;
-  const book = toBeRead.find((b) => b.name === bookName);
+  const book = toBeRead.find(
+    (b) => b.name.toLowerCase() === bookName.toLowerCase(),
+  );
 
   if (book) {
     res.render("pages/book-detail", {
