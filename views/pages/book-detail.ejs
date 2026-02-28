@@ -2,6 +2,7 @@
 
 <div class="container page_container">
   <div class="book_page_layout">
+    <!-- book cover image -->
     <div class="book_cover_container">
       <img
         src="/images/<%= book.image %>"
@@ -11,7 +12,7 @@
         class="book_cover"
       />
     </div>
-
+    <!-- about the book -->
     <div class="info_container">
       <h1 class="name title info_big"><%= book.name %></h1>
       <h2 class="author info_normal"><%= book.author %></h2>
@@ -24,7 +25,7 @@
           ><strong>Length: </strong> <%= book.pages %> pages</span
         >
       </div>
-
+      <!-- back button -->
       <a href="javascript:history.back()" class="back_button"
         >Back to Library</a
       >

@@ -2,15 +2,17 @@
 <%- include("../partials/menu.ejs")%>
 
 <div class="container">
+  <!-- if it is pageType home -->
   <% if (pageType === 'home') { %>
-
+<!-- show home.ejs -->
     <%- include("../partials/home.ejs") %>
-
+<!-- om de är favoirter eller to-be-read -->
   <% } else if (pageType === 'favourites' || pageType === 'to-be-read') { %>
-
+<!-- visa korten om ovanstående är sant -->
     <%- include("../partials/book-card.ejs") %> 
-    
+    <!-- om de är book info ..-->
   <% } else if (pageType === 'book-detail') { %>
+    <!-- visa book-detail.ejs (pages) -->
     <%- include("../partials/book-detail.ejs") %>
   <% } %>
 </div>
