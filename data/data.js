@@ -35,15 +35,15 @@ export const favourites = [
     id: "next-of-kin",
   },
   {
-    image: "silent-patient.jpg",
-    name: "The Silent Patient",
-    genre: "Thriller, Mystery, Fiction",
-    author: "Alex Michaelides",
+    image: "projectHailMary.jpg",
+    name: "Project Hail Mary",
+    author: "Andy Weir",
+    genre: "Sci-Fi, Adventure, Fiction",
     description:
-      "Alicia Berenson’s life is seemingly perfect. A famous painter married to an in-demand fashion photographer, she lives in a grand house with big windows overlooking a park in one of London’s most desirable areas. One evening her husband Gabriel returns home late from a fashion shoot, and Alicia shoots him five times in the face, and then never speaks another word. Alicia’s refusal to talk, or give any kind of explanation, turns a domestic tragedy into something far grander, a mystery that captures the public imagination and casts Alicia into notoriety. The price of her art skyrockets, and she, the silent patient, is hidden away from the tabloids and spotlight at the Grove, a secure forensic unit in North London. Theo Faber is a criminal psychotherapist who has waited a long time for the opportunity to work with Alicia. His determination to get her to talk and unravel the mystery of why she shot her husband takes him down a twisting path into his own motivations—a search for the truth that threatens to consume him....",
-    pages: 336,
-    group: "favourites",
-    id: "the-silent-patient",
+      "A LONE ASTRONAUT. AN IMPOSSIBLE MISSION. AN ALLY HE NEVER IMAGINED. RYLAND GRACE is the sole survivor on a desperate, last-chance mission—and if he fails, humanity and Earth itself will perish. Except that right now, he doesn’t know that. He can’t even remember his own name, let alone the nature of his assignment or how to complete it. All he knows is that he’s been asleep for a very, very long time. And he’s just been awakened to find himself millions of miles from home, with nothing but two corpses for company. His crewmates dead, his memories fuzzily returning, Ryland realizes that an impossible task now confronts him. Hurtling through space on this tiny ship, it’s up to him to puzzle out an impossible scientific mystery—and conquer an extinction-level threat to our species. And with the clock ticking down and the nearest human being light-years away, he’s got to do it all alone. Or does he?",
+    pages: 476,
+    group: "to-be-read",
+    id: "project-hailmary",
   },
 ];
 
@@ -71,18 +71,6 @@ export const toBeRead = [
     group: "to-be-read",
     id: "twisted",
   },
-
-  {
-    image: "projectHailMary.jpg",
-    name: "Project Hail Mary",
-    author: "Andy Weir",
-    genre: "Sci-Fi, Adventure, Fiction",
-    description:
-      "A LONE ASTRONAUT. AN IMPOSSIBLE MISSION. AN ALLY HE NEVER IMAGINED. RYLAND GRACE is the sole survivor on a desperate, last-chance mission—and if he fails, humanity and Earth itself will perish. Except that right now, he doesn’t know that. He can’t even remember his own name, let alone the nature of his assignment or how to complete it. All he knows is that he’s been asleep for a very, very long time. And he’s just been awakened to find himself millions of miles from home, with nothing but two corpses for company. His crewmates dead, his memories fuzzily returning, Ryland realizes that an impossible task now confronts him. Hurtling through space on this tiny ship, it’s up to him to puzzle out an impossible scientific mystery—and conquer an extinction-level threat to our species. And with the clock ticking down and the nearest human being light-years away, he’s got to do it all alone. Or does he?",
-    pages: 476,
-    group: "to-be-read",
-    id: "project-hailmary",
-  },
   {
     image: "rock.jpg",
     name: "Rock Paper Scissors",
@@ -93,5 +81,16 @@ export const toBeRead = [
     pages: 294,
     group: "to-be-read",
     id: "rock-paper-scissors",
+  },
+  {
+    image: "3bp.jpg",
+    name: "3 Body Problem",
+    author: "Liu Cixin ,Ken Liu",
+    genre: "Sci-Fi, Adventure, Fiction",
+    description:
+      "Set against the backdrop of China's Cultural Revolution, a secret military project sends signals into space to establish contact with aliens. An alien civilization on the brink of destruction captures the signal and plans to invade Earth. Meanwhile, on Earth, different camps start forming, planning to either welcome the superior beings and help them take over a world seen as corrupt, or to fight against the invasion.",
+    pages: 472,
+    group: "to-be-read",
+    id: "3-body-problem",
   },
 ];
