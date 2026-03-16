@@ -111,8 +111,6 @@ body {
   font-weight: 700;
 }
 
-/* FAVOURITES / */
-
 .book_container {
   display: grid;
   gap: 20px;
@@ -317,9 +315,11 @@ body {
   }
 
   .book_container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     margin: 5px;
     padding: 10px;
+    gap: 10px;
   }
 
   .navbar {
